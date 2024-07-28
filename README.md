@@ -32,26 +32,30 @@ Clone the repository to your local machine:
 ```bash
 git clone <repository_url>
 cd <repository_directory>
+```
 
-### 2.  Set Up a Virtual Environment
+### 2. Set Up a Virtual Environment
+
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
 ### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Initialize the database
 ```bash
 flask db init            # Only needed if the migrations folder does not exist
 flask db migrate -m "Initial migration"  # Create migration files
 flask db upgrade         # Apply the migrations to the database
-
+```
 ### 4. Run the Flask Application
 ```bash
 flask run
-
+```
 
 
 
